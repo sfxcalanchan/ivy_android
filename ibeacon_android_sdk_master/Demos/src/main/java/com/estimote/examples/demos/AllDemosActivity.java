@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
+ * on 9 alan chan
  * Shows all available demos.
  *
  * @author wiktor@estimote.com (Wiktor Gworek)
