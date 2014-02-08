@@ -29,6 +29,7 @@ public class AllDemosActivity extends Activity {
     findViewById(R.id.notify_demo_button).setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View v) {
+//on99999
         Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
         intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, NotifyDemoActivity.class.getName());
         startActivity(intent);
