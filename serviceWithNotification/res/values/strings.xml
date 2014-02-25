@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">serviceWithNotification</string>
+    <string name="hello_world">hello_world</string>
+    <string name="local_service_started">Local Service Started</string>
+</resources>
