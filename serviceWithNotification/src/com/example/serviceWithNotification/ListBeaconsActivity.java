@@ -1,5 +1,6 @@
 package com.example.serviceWithNotification;
 
+import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.os.Bundle;
@@ -48,9 +49,9 @@ public class ListBeaconsActivity extends Activity {
 
     // Configure device list.
     adapter = new LeDeviceListAdapter(this);
-    ListView list = (ListView) findViewById(R.id.device_list);
-    list.setAdapter(adapter);
-    list.setOnItemClickListener(createOnItemClickListener());
+    //ListView list = (ListView) findViewById(R.id.device_list);
+    //list.setAdapter(adapter);
+    //list.setOnItemClickListener(createOnItemClickListener());
 
     // Configure verbose debug logging.
     L.enableDebugLogging(true);
@@ -74,9 +75,9 @@ public class ListBeaconsActivity extends Activity {
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
-    getMenuInflater().inflate(R.menu.scan_menu, menu);
-    MenuItem refreshItem = menu.findItem(R.id.refresh);
-    refreshItem.setActionView(R.layout.actionbar_indeterminate_progress);
+    //getMenuInflater().inflate(R.menu.scan_menu, menu);
+    //MenuItem refreshItem = menu.findItem(R.id.refresh);
+    //refreshItem.setActionView(R.layout.actionbar_indeterminate_progress);
     return true;
   }
 

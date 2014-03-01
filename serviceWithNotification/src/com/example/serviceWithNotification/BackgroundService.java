@@ -2,6 +2,11 @@ package com.example.serviceWithNotification;
 
 import java.util.Date;
 
+import com.estimote.sdk.Beacon;
+import com.estimote.sdk.BeaconManager;
+import com.estimote.sdk.Region;
+
+
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -12,6 +17,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.util.Log;
+import static com.estimote.sdk.BeaconManager.MonitoringListener;
+
 
 /**
  * Created by developer on 24/2/14.
@@ -27,6 +34,9 @@ public class BackgroundService extends Service {
     private final IBinder mBinder = new LocalBinder();
     private String newtext;
 
+    private BeaconManager beaconManager;
+    private Region region;
+    
     public class LocalBinder extends Binder
     {
         BackgroundService getService()
@@ -47,6 +57,8 @@ public class BackgroundService extends Service {
 //        notification.setLatestEventInfo(BackgroundService.this,"BackgroundAppExample", newtext, contentIntent);
 //        mNM.notify(R.string.local_service_started, notification);
         notificationIntent = new Intent(this, MainActivity.class);
+
+        
 //        handler.postDelayed(showTime, 50000);
         //showNotification();
     }
@@ -76,7 +88,11 @@ public class BackgroundService extends Service {
             Log.d(ACTIVITY_SERVICE, "fuck off");
         	System.out.println("new Date():" + new Date().toString());
             handler.postDelayed(this, 10000);
-            showNotification();
+            
+            
+            
+            if(false)
+            	showNotification();
         }
     };
 
