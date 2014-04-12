@@ -25,7 +25,7 @@ import java.util.List;
  *
  * @author wiktorgworek@google.com (Wiktor Gworek)
  */
-public class ListBeaconsActivity extends Activity {
+public class ListBeaconsActivity extends Activity{
 
   private static final String TAG = ListBeaconsActivity.class.getSimpleName();
 

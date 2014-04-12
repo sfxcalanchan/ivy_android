@@ -34,6 +34,7 @@ public class AllDemosActivity extends Activity {
         Intent intent = new Intent(AllDemosActivity.this, ListBeaconsActivity.class);
         intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, NotifyDemoActivity.class.getName());
         startActivity(intent);
+        //startService(intent);
       }
     });
   }

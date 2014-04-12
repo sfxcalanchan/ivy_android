@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
         });
         
         
-        
+        Log.d(ACTIVITY_SERVICE, "fuck off");
      // Configure BeaconManager.
         adapter = new LeDeviceListAdapter(this);
         beaconManager = new BeaconManager(this);
